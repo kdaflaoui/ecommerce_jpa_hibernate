@@ -26,9 +26,9 @@ public class EcommerceJpaHibernateApplication {
         productList.stream().forEach(product -> {
             System.out.println(product);
         });
-
-        List<Product> productListByName = productDao.getAllByKeyWord("Dell");
-        productList.stream().forEach(product -> {
+        System.out.println("-----------------------------------------------");
+        List<Product> productListByName = productDao.getAllByKeyWord("Dell 5740");
+        productListByName.stream().forEach(product -> {
             System.out.println(product);
         });
     }
